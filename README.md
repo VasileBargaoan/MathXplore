@@ -1,1 +1,1 @@
-# MathXplore-
+# MathXplore
