@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MathXplore</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="Logo MathXplore" />
+            <nav class="nav" id="nav-menu">
+                <ul>
+                    <li><a href="acasa.html">Acasă</a></li>
+                    <li><a href="">Despre noi</a></li>
+                    <li><a href="">Aplicații</a></li>
+                    <li><a href="eseu.html">Eseu</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" class="menu" id="menu-btn" alt="Menu icon" />
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <div class="text-group">
+                    <div class="vertical-line"></div>
+                    <div class="text-content">
+                        <h2>MathXplore</h2>
+                        <h3>Explorează matematica într-un mod captivant!</h3>
+                        <p>Descoperă aplicații interactive, eseuri și instrumente educaționale pentru toți pasionații de matematică.</p>
+                        <button type="button" class="button">
+                            <span class="button-text">Mai multe</span>
+                            <img src="arow.png" alt="arrow" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <img src="imagine.png" alt="Imagine matematică" class="imagine" />
+                <div class="color-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

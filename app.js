@@ -4,14 +4,16 @@ const app=express();
 app.listen(3000,'localhost');
 console.log("Listening...");
 
+app.use(express.static('public'));
+
 app.get('/',(req,res)=>
 {
-    res.sendFile(`${__dirname}/sites/home.html`);
+    res.sendFile(`${__dirname}/views/home.html`);
 });
 
 app.get('/about',(req,res)=>
 {
-    res.sendFile(`${__dirname}/sites/about.html`);
+    res.sendFile(`${__dirname}/views/about.html`);
 
 });
 
