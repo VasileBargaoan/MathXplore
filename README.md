@@ -1,2 +1,2 @@
 # MathXplore
-hgfsksdjhjh
+Explorează matematica într-un mod captivant!
